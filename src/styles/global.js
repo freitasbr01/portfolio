@@ -14,9 +14,7 @@ export default createGlobalStyle`
   body {
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
-
-    background-color: ${({ theme }) => theme.COLORS.DARK_400};
-    color: ${({ theme }) => theme.COLORS.LIGHT_100};
+    background-color: ${({ theme }) => theme.COLORS.DARK_100};
     -webkit-font-smoothing: antialiased;
   }
 
@@ -26,13 +24,12 @@ export default createGlobalStyle`
     outline: none;
   } */
 
-
   button:hover, a:hover {
     filter: brightness(0.9);
   }
 
   button, a {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     font-weight: 500;
     outline: none;
     text-decoration: none;

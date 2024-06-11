@@ -19,15 +19,18 @@ export default {
     DARK_900: "#0D1D25",
     DARK_1000: "#192227",
 
-    TOMATO_100: "#750310",
-    TOMATO_200: "#92000E",
-    TOMATO_300: "#AB222E",
-    TOMATO_400: "#AB4D55",
+    GRAY_100: "#c9cec7",
+    GRAY_200: "#9FA4A7",
+    GRAY_300: "#9FA4A715",
+    GRAY_400: "#3C45455",
 
-    CARROT_100: "#FBA94C",
-    MINT_100: "#04D361",
-    CAKE_100: "#065E7C",
-    CAKE_200: "#82F3FF",
+    MINT_100: "#64f965",
+    MINT_200: "#04D361",
+    MINT_300: "#77a39b",
+    MINT_400: "#6B946B",
+    MINT_500: "#55ff4d20",
 
+    SEA_100: "#5dcfc9",
+    
   }
 }
