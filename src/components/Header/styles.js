@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.div`
-  /* border: 1px solid red; */
   max-width: 180.0rem;
   border-radius: .5rem;
   margin: 0 auto;
@@ -15,10 +14,28 @@ export const Container = styled.div`
     max-width: 8rem;
     border-radius: 1rem;
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    align-items: start;
+    gap: 1.5rem;
+    padding: 1rem;
+
+    img {
+      max-width: 5rem;
+    }
+  }
 `
 
 export const Profile = styled.div`
   width: 100%;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    .tag {
+      p {
+        display: none;
+      }
+    }
+  }
 
   h2 {
     font-size: 2rem;
@@ -32,6 +49,7 @@ export const Profile = styled.div`
 
   .tag {
     display: flex;
+    flex-wrap: wrap;
     gap: 1.5rem;  
   }
 
@@ -52,13 +70,12 @@ export const ButtonMenu = styled.button`
 
   > svg {
     font-size: 3rem;
-    color: ${({ theme }) => theme.COLORS.GRAY_200}
+    color: var(--button-menu-color);
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     display: flex;
     align-self: flex-start;
-    margin-right: 2.5rem
+    margin-right: 1rem
   }
-
 `

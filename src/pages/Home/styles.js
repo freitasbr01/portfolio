@@ -18,4 +18,12 @@ export const Content = styled.div`
     border: var(--border-color);
     border-radius: .8rem;
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    margin: 1rem 1rem;
+
+    .box-main {
+      padding: 1rem 1rem 3rem 1rem ;
+    }
+  }
 `

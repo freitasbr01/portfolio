@@ -12,7 +12,7 @@ export const Container = styled.aside`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     position: absolute;
     z-index: 1;
     transform: translateX(-100%);
@@ -22,9 +22,7 @@ export const Container = styled.aside`
       width: 100%;
       background: var(--bg-color2);
       transform: translateX(0);
-    }
-
-    
+    }    
   }
 `
 
@@ -48,7 +46,6 @@ export const Nav = styled.nav`
 
       li span {
         color: var(--text-color1);
-        /* margin-right: 1rem; */
       }
     }
 
@@ -96,8 +93,8 @@ export const ButtonToggleMode = styled.button`
   width: 3rem;
   font-size: 2.5rem;
   background: none;
-  color: var(--text-color1);
-  margin-top: 39rem;
+  color: var(--text-color1);  
+  margin-top: auto;
   margin-bottom: 1.5rem;
   cursor: pointer;
   border: none;

@@ -33,6 +33,7 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
         <ul>
           <li>
             <Link
+              onClick={onCloseMenu}
               className={`link ${location.pathname === '/about' ? 'active' : ''}`}
               to="/about"
             >
@@ -42,7 +43,8 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
           </li>
 
           <li>
-            <Link 
+            <Link
+            onClick={onCloseMenu}
             className={`link ${location.pathname === '/projects' ? 'active' : ''}`}
             to="/projects"
           >
@@ -52,13 +54,14 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
           </li>
 
           <li>
-          <Link 
+          <Link
+            onClick={onCloseMenu} 
             className={`link ${location.pathname === '/stack' ? 'active' : ''}`}
             to="/stack"
           >
-              <LuLaptop className={location.pathname === '/stack' ? 'icon-color' : ''} />
-              <span>Tech Stack</span>
-            </Link>
+            <LuLaptop className={location.pathname === '/stack' ? 'icon-color' : ''} />
+            <span>Tech Stack</span>
+          </Link>
           </li>          
         </ul>
 
@@ -100,7 +103,9 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
       </Nav>
 
         <ButtonToggleMode onClick={toggleTheme}>
-          {theme === 'light' ? <BsFillMoonStarsFill /> : <RiSunFill  /> }
+          <div>
+            {theme === 'light' ? <BsFillMoonStarsFill /> : <RiSunFill  /> }
+          </div>
         </ButtonToggleMode>
 
     </Container>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`
   display: flex;
@@ -30,8 +30,14 @@ export const Container = styled.div`
 `
 
 export const BoxTech = styled.div`
-display: grid;
-grid-template-columns: repeat(4, 1fr);
-gap: 2rem;
-margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 `

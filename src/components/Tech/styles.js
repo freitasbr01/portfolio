@@ -7,7 +7,7 @@ export const Container = styled.div`
 
   color: var(--text-color1);
   background: var(--bg-color-tech);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   border-radius: 6px;
 
   display: flex;

@@ -2,7 +2,6 @@ import { Container, Profile, ButtonMenu } from './styles';
 import perfil from '../../assets/perfil2.jpg'
 import { PiListBold } from "react-icons/pi";
 
-
 export function Header({ onOpenMenu, ...rest }) {
   return (
     <Container>
@@ -12,6 +11,7 @@ export function Header({ onOpenMenu, ...rest }) {
       </ButtonMenu>
 
       <img src={perfil} loading="lazy" alt="Foto de perfil" />
+      
       <Profile>
         <h2>Alan Freitas</h2>
         <p className='dev'>Desenvolvedor Full-Stack</p>

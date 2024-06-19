@@ -3,15 +3,15 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`    
 
-@media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-  h1 {
-    margin-right: 2rem;
+    h1 {
+      margin-right: 2rem;
+    }
   }
-}
 
   ::-webkit-scrollbar {
     width: 8px;

@@ -21,6 +21,7 @@ export default createGlobalStyle`
     --text-color2: ${({ theme }) => theme.COLORS.DARK_300};
     --text-close-icon: ${({ theme }) => theme.COLORS.LIGHT_200};
     --text-close-icon-hover: ${({ theme }) => theme.COLORS.LIGHT_500};
+    --button-menu-color: ${({ theme }) => theme.COLORS.DARK_100};
   }
 
   [data-theme='dark'] {
@@ -37,6 +38,7 @@ export default createGlobalStyle`
     --text-color2: ${({ theme }) => theme.COLORS.LIGHT_500};
     --text-close-icon: ${({ theme }) => theme.COLORS.LIGHT_200};
     --text-close-icon-hover: ${({ theme }) => theme.COLORS.LIGHT_500};
+    --button-menu-color: ${({ theme }) => theme.COLORS.GRAY_200};
   }  
 
   body {

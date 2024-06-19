@@ -25,63 +25,71 @@ export const Container = styled.div`
     } 
   }
 
-  .access {
-    color: ${({ theme }) => theme.COLORS.SEA_200};
-    display: flex;
-    gap: 2rem;
-  }
+  .description {
+    h2, h3 {
+      color: var(--text-color1);
+      font-size: 2rem;
+      margin-bottom: 1rem;    
+    }
 
-  .access a {
-    color: ${({ theme }) => theme.COLORS.SEA_200};
-    font-weight: 400;
-    margin-left: .5rem;
-    font-family: "JetBrains Mono", monospace;
-    font-size: 1.3rem;
-  }
+    h3 {
+      font-size: 1.6rem;
+    }
 
-  .repo, .deploy {
-    display: flex;
-    align-items: center;
-  }
+    p {
+      color: var(--text-color2);
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+    }
 
-  h2, h3 {
-    color: var(--text-color1);
-    font-size: 2rem;
-    margin-bottom: 1rem;    
-  }
+    .skills {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: .6rem;
+      margin-bottom: 3rem;
+      svg {
+        width: 2rem;
+      }
+    }
 
-  h3 {
-    font-size: 1.6rem;
-  }
+    .access {
+        color: ${({ theme }) => theme.COLORS.SEA_200};
+        display: flex;
+        gap: 2rem;
+    }
 
-  p {
-    color: var(--text-color2);
-    margin-bottom: 2rem;
-    font-size: 1.5rem;
-  }
+    .access a {
+      color: ${({ theme }) => theme.COLORS.SEA_200};
+      font-weight: 400;
+      margin-left: .5rem;
+      font-family: "JetBrains Mono", monospace;
+      font-size: 1.3rem;
+    }
 
-  .skills {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: .6rem;
-    margin-bottom: 3rem;
-    svg {
-      width: 2rem;
+    .repo, .deploy {
+      display: flex;
+      align-items: center;
     }
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+  @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     max-width: 37rem;
     flex-direction: column;
     gap: 2rem;
+
+    p {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
 
     .description {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
   }
 `
 
