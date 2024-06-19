@@ -1,8 +1,33 @@
-# React + Vite
+<h2 align="center">Portfólio</h2>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1 align="center">
+    <img width="600px" alt="Portofolio" title="#Portfolio" src="https://github.com/freitasbr01/rocketnotes-front/blob/main/src/assets/rocketnotes2.png" />
+</h1>
 
-Currently, two official plugins are available:
+<p align="center">
+ <a href="#-sobre-o-projeto">Sobre</a> •
+ <a href="#-tecnologias">Tecnologias</a> 
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Sobre o projeto
+
+Nesse projeto foi desenvolvido um aplicativo web para criar notas. A plataforma permite aos usuários criar uma conta pessoal onde podem acessar e personalizar sua própria lista de notas. Oferece também a funcionalidade de atribuir tags a cada nota que o usuário criou.
+
+Link de acesso - <a href="https://rocketnotes02.netlify.app/">Portfólio</a>
+
+---
+
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **ReactJS**
+
+---
+
+[![Linkedin Badge](https://img.shields.io/badge/-Alan_Freitas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alanfreitasbr01/)](https://www.linkedin.com/in/alanfreitasbr01/)
+[![Gmail Badge](https://img.shields.io/badge/-freitasbr01@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:freitasbr01@gmail.com)](mailto:freitasbr01@gmail.com)

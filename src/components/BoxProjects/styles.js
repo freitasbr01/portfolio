@@ -1,34 +1,30 @@
 import styled from 'styled-components';
-// import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`    
-  max-width: 180.0rem;
-  
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
 
+@media (max-width: ${DEVICE_BREAKPOINTS.LG}) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-right: 2rem;
+  }
+}
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
   ::-webkit-scrollbar-track {
     background-color: transparent;
   }
-
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.DARK_1000}; 
-    border-radius: .3rem;
+    background-color: var(--bg-color-scroll);
+    border-radius: .5rem;
     cursor: grab;
-
   }
-
-    .scrollbar {
-    height: 56rem;
-
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding-right: 3rem;
-    overflow-y: scroll;
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--bg-color-scroll-hover);
   }
-
-  /* border: 2px solid green; */
-
 `

@@ -2,6 +2,7 @@ import React from 'react';
 
 const CustomIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 32 32">
+    <title>ReactJS</title>
     <g transform="matrix(.05696 0 0 .05696 .647744 2.43826)" fill="none" fill-rule="evenodd">
       <circle r="50.167" cy="237.628" cx="269.529" fill="#00d8ff" />
       <g stroke="#00d8ff" stroke-width="24">

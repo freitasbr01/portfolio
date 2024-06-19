@@ -1,10 +1,8 @@
 import { Container } from './styles';
 
-export function Button({ icon: Icon, title, ...rest }) {
+export function ScrollBar({ ...rest }) {
   return (
     <Container {...rest}>
-      {title}
-      {Icon && <Icon />}
     </Container>
   )
 }

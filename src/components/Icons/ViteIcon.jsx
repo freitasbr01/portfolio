@@ -8,6 +8,7 @@ function ViteIcon(props) {
       fill="none"
       {...props}
     >
+      <title>Vite</title>
       <path
         d="M29.884 6.146l-13.142 23.5a.714.714 0 01-1.244.005L2.096 6.148a.714.714 0 01.746-1.057l13.156 2.352a.714.714 0 00.253 0l12.881-2.348a.714.714 0 01.752 1.05z"
         fill="url(#paint0_linear)"

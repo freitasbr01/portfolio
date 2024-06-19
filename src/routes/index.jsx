@@ -1,10 +1,11 @@
 import { BrowserRouter } from 'react-router-dom';
+
 import { Home } from '../pages/Home';
 
-export function Routes() {
+export function Route() {
   return (
     <BrowserRouter>
-      {Home}
+      { <Home /> }
     </BrowserRouter>
   )
 }
