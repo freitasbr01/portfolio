@@ -1,19 +1,20 @@
 <h2 align="center">Portfólio</h2>
 
 <h1 align="center">
-    <img width="600px" alt="Portofolio" title="#Portfolio" src="" />
+    <img width="600px" alt="Portofolio" title="#Portfolio" src="https://github.com/freitasbr01/portfolio/blob/main/src/assets/portfolio.png" />
 </h1>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
- <a href="#-tecnologias">Tecnologias</a> 
+ <a href="#-tecnologias">Tecnologias</a> •
+ <a href="#-autor">Autor</a> 
 </p>
 
 ## 💻 Sobre o projeto
 
-Nesse projeto foi desenvolvido um aplicativo web para criar notas. A plataforma permite aos usuários criar uma conta pessoal onde podem acessar e personalizar sua própria lista de notas. Oferece também a funcionalidade de atribuir tags a cada nota que o usuário criou.
+Nesse projeto foi desenvolvido meu portfólio pessoal. Ele é responsivo, proporcionando uma experiência visual otimizada em qualquer dispositivo. Todos os projetos são apresentados com links diretos para seus deploys e repositórios no GitHub, facilitando o acesso e a visualização. Há uma seção dedicada que oferece uma breve descrição sobre mim. Adicionalmente, inclui uma seção destacando todas as stacks que possuo. O portfólio também possui suporte a temas claro e escuro, permitindo que os usuários escolham o modo de visualização de acordo com suas preferências.
 
-Link de acesso - <a href="https://rocketnotes02.netlify.app/">Portfólio</a>
+Link de acesso - <a href="https://alanfreitas.netlify.app/">Portfólio</a>
 
 ---
 
