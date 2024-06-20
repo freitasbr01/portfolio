@@ -49,7 +49,7 @@ export function BoxAbout({ ...rest }) {
 
             Estou comprometido com o aprendizado contínuo, sempre em busca de novos conhecimentos para aprimorar minhas habilidades. Meu objetivo no futuro próximo é iniciar uma pós-graduação em Engenharia de Software e estudar AWS.<br/><br/>
 
-            Sempre gostei de aprender e entender o porquê das coisas, entendo que o comprometimento e a dedicação são pilares importantes para obter êxito em qualquer area da vida, não existe meio termo para isso, é algo que levo sempre comigo.
+            Sempre gostei de aprender e entender o porquê das coisas, entendo que o comprometimento e a dedicação são pilares importantes para obter êxito em qualquer area da vida, é algo que levo sempre comigo.
             Estou ansioso para continuar minha jornada e explorar novas oportunidades na área de desenvolvimento web.
           </p>
 
@@ -57,7 +57,7 @@ export function BoxAbout({ ...rest }) {
           <p>
             Atuei como <span className='spanBold'>Técnico de Sistemas</span> e, posteriormente, como <span>Analista de Tecnologia</span> no departamento de tecnologia da Plataforma de Produção da <span className='spanBold'>TV Globo</span>. Lá, eu era responsável pelo planejamento, preparação e disponibilização dos recursos necessários para a gravação e transmissão de programas ao vivo.<br/><br/>
 
-            Foi durante um projeto especial para as Eleições, onde tive a oportunidade de ver de perto a participação da equipe de desenvolvimento, que minha paixão pela programação realmente se acendeu. Fiquei fascinado pela dinâmica e pelo impacto da aplicação que desenvolveram para coletar dados das urnas recebidas através do TSE em tempo real. A elaboração do design e as funcionalidades criadas para interação do apresentador com a aplicação rodando no telão do estúdio foram incríveis e despertaram em mim uma grande vontade de conhecer como tudo isso funciona e um dia também poder trabalhar com isso.<br/><br/>
+            Foi durante um projeto especial para as Eleições, onde tive a oportunidade de ver de perto a participação da equipe de desenvolvimento, que minha paixão pela programação realmente se acendeu. Fiquei fascinado pela dinâmica e pelo impacto da aplicação que desenvolveram para coletar dados das urnas recebidas através do TSE, em tempo real. A elaboração do design e as funcionalidades criadas para a interação do apresentador com a aplicação rodando no telão do estúdio foram incríveis e despertaram em mim uma grande vontade de conhecer como tudo isso funciona e, um dia, também poder trabalhar com isso.<br/><br/>
 
             Tenho certeza de que as habilidades que desenvolvi em minha carreira anterior, como comunicação, resolução de problemas e conflitos, e trabalho sob pressão, serão valiosas em minha nova função como desenvolvedor.
           </p>          

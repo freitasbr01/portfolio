@@ -1,7 +1,7 @@
 <h2 align="center">Portfólio</h2>
 
 <h1 align="center">
-    <img width="600px" alt="Portofolio" title="#Portfolio" src="https://github.com/freitasbr01/rocketnotes-front/blob/main/src/assets/rocketnotes2.png" />
+    <img width="600px" alt="Portofolio" title="#Portfolio" src="" />
 </h1>
 
 <p align="center">
