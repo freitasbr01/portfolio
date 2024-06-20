@@ -29,5 +29,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
+## 🦸 Autor
+
+ <img src="https://avatars.githubusercontent.com/u/137903019?s=400&u=a5d7cc78d579a664a0b95b010c70d153f0265b60&v=4" width="100px;" style="border-radius: 50%;" alt=""/>
+
 [![Linkedin Badge](https://img.shields.io/badge/-Alan_Freitas-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/alanfreitasbr01/)](https://www.linkedin.com/in/alanfreitasbr01/)
 [![Gmail Badge](https://img.shields.io/badge/-freitasbr01@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:freitasbr01@gmail.com)](mailto:freitasbr01@gmail.com)
