@@ -63,7 +63,7 @@ export function BoxProjects({ ...rest}) {
           <Project 
             title={{h2: "Portfólio", h3: "Tecnologias utilizadas"}} 
             description="Meu portfólio como desenvolvedor web."
-            links={{repo: "https://github.com/seuusuario/seuprojeto", deploy: "https://seuprojeto.com"}}
+            links={{repo: "https://github.com/freitasbr01/portfolio", deploy: "https://alanfreitas.netlify.app"}}
             photo={imgPortifolio}
             icons={[ <JavaScriptIcon />, <ReactIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
@@ -76,35 +76,12 @@ export function BoxProjects({ ...rest}) {
             icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
-          <Project 
-            title={{h2: "RocketNotes", h3: "Tecnologias utilizadas"}} 
-            description="Sistema de gerenciamento de anotações de gerais. Permite que os usuários mantenham um registro organizado de suas anotações em uma variedade de tópicos."
-            links={{repo: "https://github.com/freitasbr01/rocketnotes-front", deploy: "https://rocketnotes02.netlify.app/"}}
-            photo={imgRocketNotes}
-            icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
-          />
 
           <Project 
             title={{h2: "Biscoito da Sorte", h3: "Tecnologias utilizadas"}} 
             description="Projeto de um aplicativo web interativo chamado “Biscoito da Sorte” que permite aos usuários abrir um biscoito da sorte virtual."
             links={{repo: "https://github.com/freitasbr01/biscoito-da-sorte?tab=readme-ov-file", deploy: "https://biscoitodasorte01.netlify.app/"}}
             photo={imgBiscoito}
-            icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
-          />
-
-          <Project 
-            title={{h2: "NLW Expert", h3: "Tecnologias utilizadas"}} 
-            description="Projeto de um quiz sobre JavaScript para testar os conhecimentos técnicos e ter um retorno sobre a quantidade de questões acertadas."
-            links={{repo: "https://github.com/freitasbr01/nlw-experts?tab=readme-ov-file", deploy: "https://nlw-expert.netlify.app/"}}
-            photo={imgNlwExpert}
-            icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
-          />
-
-          <Project 
-            title={{h2: "Calculadora IMC", h3: "Tecnologias utilizadas"}} 
-            description="Projeto de um aplicativo web para calcular o IMC, basta fornecer a altura e o peso para realizar o cálculo."
-            links={{repo: "https://github.com/freitasbr01/CalculadoraIMC", deploy: "https://calc-imc01.netlify.app/"}}
-            photo={imgCalculadora}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
@@ -129,6 +106,30 @@ export function BoxProjects({ ...rest}) {
             description="Uma aplicação web interativa que se integra à API do GitHub. Esta aplicação permite aos usuários favoritar outros usuários do GitHub de seu interesse."
             links={{repo: "https://github.com/freitasbr01/github-favorites", deploy: "https://github-favorites01.netlify.app/"}}
             photo={imgGithubFavorites}
+            icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
+          />
+
+          <Project 
+            title={{h2: "RocketNotes", h3: "Tecnologias utilizadas"}} 
+            description="Sistema de gerenciamento de anotações de gerais. Permite que os usuários mantenham um registro organizado de suas anotações em uma variedade de tópicos."
+            links={{repo: "https://github.com/freitasbr01/rocketnotes-front", deploy: "https://rocketnotes02.netlify.app/"}}
+            photo={imgRocketNotes}
+            icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
+          />
+
+          <Project 
+            title={{h2: "NLW Expert", h3: "Tecnologias utilizadas"}} 
+            description="Projeto de um quiz sobre JavaScript para testar os conhecimentos técnicos e ter um retorno sobre a quantidade de questões acertadas."
+            links={{repo: "https://github.com/freitasbr01/nlw-experts?tab=readme-ov-file", deploy: "https://nlw-expert.netlify.app/"}}
+            photo={imgNlwExpert}
+            icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
+          />
+
+          <Project 
+            title={{h2: "Calculadora IMC", h3: "Tecnologias utilizadas"}} 
+            description="Projeto de um aplicativo web para calcular o IMC, basta fornecer a altura e o peso para realizar o cálculo."
+            links={{repo: "https://github.com/freitasbr01/CalculadoraIMC", deploy: "https://calc-imc01.netlify.app/"}}
+            photo={imgCalculadora}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
