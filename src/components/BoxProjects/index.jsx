@@ -26,7 +26,6 @@ import GithubIcon from '../Icons/GithubIcon';
 import NodeIcon from '../Icons/NodeIcon';
 import SqliteIcon from '../Icons/SqliteIcon';
 
-import { BiCheckboxSquare } from "react-icons/bi";
 import { motion } from 'framer-motion';
 
 export function BoxProjects({ ...rest}) {
