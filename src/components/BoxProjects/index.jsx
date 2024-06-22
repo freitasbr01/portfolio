@@ -61,7 +61,7 @@ export function BoxProjects({ ...rest}) {
         <ScrollBar>
           <Project 
             title={{h2: "Portfólio", h3: "Tecnologias utilizadas"}} 
-            description="Meu portfólio como desenvolvedor web."
+            description="Meu portfólio como desenvolvedor, apliquei algumas funcionalidades como dark/light mode, responsividade para dispositivos, transições e animações."
             links={{repo: "https://github.com/freitasbr01/portfolio", deploy: "https://alanfreitas.netlify.app"}}
             photo={imgPortifolio}
             icons={[ <JavaScriptIcon />, <ReactIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
