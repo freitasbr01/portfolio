@@ -95,7 +95,7 @@ export const ButtonToggleMode = styled.button`
   background: none;
   color: var(--text-color1);  
   margin-top: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
   cursor: pointer;
   border: none;
 `

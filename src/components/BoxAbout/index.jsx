@@ -45,11 +45,11 @@ export function BoxAbout({ ...rest }) {
 
           <h2>Habilidades e Objetivos Futuros</h2>          
           <p>
-            Tenho me dedicado ao estudo de desenvolvimento web por aproximadamente um ano, com foco na criação de interfaces front-end criativas e na construção de soluções back-end. Algumas das minhas habilidades são <span>HTML, CSS, JavaScript, ReactJS e NodeJS</span>.<br/><br/>
+            Tenho me dedicado ao estudo de desenvolvimento web por aproximadamente um ano, com foco na criação de interfaces front-end criativas e na construção de soluções back-end. Algumas das minhas habilidades são <span>HTML, CSS, JavaScript, ReactJs e NodeJs</span>.<br/><br/>
 
             Estou comprometido com o aprendizado contínuo, sempre em busca de novos conhecimentos para aprimorar minhas habilidades. A curto prazo pretendo iniciar uma pós-graduação em Engenharia de Software.<br/><br/>
 
-            Sempre gostei de aprender e entender o porquê das coisas, entendo que o comprometimento e a dedicação são pilares importantes para obter êxito em qualquer area da vida, é algo que levo sempre comigo.
+            Sempre gostei de aprender e entender o porquê das coisas, entendo que o comprometimento e a dedicação são pilares importantes para obter êxito em qualquer área da vida, é algo que levo sempre comigo.
             Estou ansioso para continuar minha jornada e explorar novas oportunidades na área de desenvolvimento web.
           </p>
 
