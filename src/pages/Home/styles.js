@@ -13,7 +13,8 @@ export const Content = styled.div`
   
   .box-main {    
     max-width: 180.0rem;
-    margin: 3rem auto;
+    margin: 0rem auto;
+    margin-top: 1rem;
     padding: 2.5rem 3rem;
     border: var(--border-color);
     border-radius: .8rem;
@@ -23,7 +24,9 @@ export const Content = styled.div`
     margin: 1rem 1rem;
 
     .box-main {
-      padding: 1rem 1rem 3rem 1rem ;
+      padding: 1rem 1rem 2rem 1rem;
+      margin: 0rem auto;
+      margin-top: 2rem;
     }
   }
 `

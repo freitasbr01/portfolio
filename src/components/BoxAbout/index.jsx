@@ -68,7 +68,6 @@ export function BoxAbout({ ...rest }) {
           </p>
 
           <DownloadButton />
-
         </ScrollBar>
 
       </Container>

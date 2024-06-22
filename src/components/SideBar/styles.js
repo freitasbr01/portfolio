@@ -16,13 +16,17 @@ export const Container = styled.aside`
     position: absolute;
     z-index: 1;
     transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     
     &[data-menu-is-open="true"] {
       width: 100%;
       background: var(--bg-color2);
       transform: translateX(0);
-    }    
+    }
+
+    &[data-menu-is-open="false"] {
+      background: var(--bg-color2);
+    }
   }
 `
 
