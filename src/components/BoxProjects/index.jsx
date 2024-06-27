@@ -10,6 +10,7 @@ import imgCalculadora from '../../assets/calculadora.png';
 import imgFocusTimer from '../../assets/contador.png';
 import imgFormularioMentoria from '../../assets/formulario-avalie.png';
 import imgGithubFavorites from '../../assets/github.png';
+import imgMarket from '../../assets/market.png';
 
 import { Title } from '../../components/Title';
 import { ScrollBar } from '../../components/ScrollBar';
@@ -65,6 +66,14 @@ export function BoxProjects({ ...rest}) {
             links={{repo: "https://github.com/freitasbr01/portfolio", deploy: "https://alanfreitas.netlify.app"}}
             photo={imgPortifolio}
             icons={[ <JavaScriptIcon />, <ReactIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
+          />
+
+          <Project 
+            title={{h2: "Market Products", h3: "Tecnologias utilizadas"}} 
+            description="Um projeto dedicado ao cadastro de produtos para um site de mercado virtual. "
+            links={{repo: "https://github.com/freitasbr01/market-products", deploy: "https://market-products.netlify.app/"}}
+            photo={imgMarket}
+            icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
