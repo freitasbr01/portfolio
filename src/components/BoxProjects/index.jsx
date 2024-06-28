@@ -62,7 +62,7 @@ export function BoxProjects({ ...rest}) {
         <ScrollBar>
           <Project 
             title={{h2: "Portfólio", h3: "Tecnologias utilizadas"}} 
-            description="No meu portfólio como desenvolvedor, apliquei algumas funcionalidades como dark/light mode, responsividade para dispositivos, transições e animações."
+            description="No meu portfólio como desenvolvedor, apliquei algumas funcionalidades como dark/light mode, design responsivo para dispositivos, transições e animações."
             links={{repo: "https://github.com/freitasbr01/portfolio", deploy: "https://alanfreitas.netlify.app"}}
             photo={imgPortifolio}
             icons={[ <JavaScriptIcon />, <ReactIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
@@ -70,7 +70,7 @@ export function BoxProjects({ ...rest}) {
 
           <Project 
             title={{h2: "Market Products", h3: "Tecnologias utilizadas"}} 
-            description="Um projeto dedicado ao cadastro de produtos para um site de mercado virtual. "
+            description="Um projeto dedicado ao cadastro de produtos para um site de mercado virtual."
             links={{repo: "https://github.com/freitasbr01/market-products", deploy: "https://market-products.netlify.app/"}}
             photo={imgMarket}
             icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}

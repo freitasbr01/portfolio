@@ -49,8 +49,8 @@ export function BoxAbout({ ...rest }) {
 
             Estou comprometido com o aprendizado contínuo, sempre em busca de novos conhecimentos para aprimorar minhas habilidades. A curto prazo pretendo iniciar uma pós-graduação em Engenharia de Software.<br/><br/>
 
-            Sempre gostei de aprender e entender o porquê das coisas, entendo que o comprometimento e a dedicação são pilares importantes para obter êxito em qualquer área da vida, é algo que levo sempre comigo.
-            Estou ansioso para continuar minha jornada e explorar novas oportunidades na área de desenvolvimento web.
+            Entendo que o comprometimento e a dedicação são pilares importantes para obter êxito em qualquer área da vida, é algo que levo sempre comigo.
+            Estou ansioso para continuar minha jornada e explorar novas oportunidades na área de desenvolvimento.
           </p>
 
           <h2>Jornada e Aprendizados</h2>
@@ -64,7 +64,7 @@ export function BoxAbout({ ...rest }) {
 
           <h2>Vamos Conversar</h2>
           <p>
-            Se meu trabalho despertou seu interesse e você deseja discutir colaborações, projetos ou oportunidades na área de desenvolvimento web, estou à disposição para batermos um papo.
+            Se meu trabalho despertou seu interesse e você deseja discutir colaborações, projetos ou oportunidades na área de desenvolvimento, estou à disposição para batermos um papo.
           </p>
 
           <DownloadButton />
