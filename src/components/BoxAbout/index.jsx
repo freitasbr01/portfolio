@@ -45,7 +45,7 @@ export function BoxAbout({ ...rest }) {
 
           <h2>Habilidades e Objetivos Futuros</h2>          
           <p>
-            Tenho me dedicado ao estudo de desenvolvimento web por aproximadamente um ano, com foco na criação de interfaces front-end criativas e na construção de soluções back-end. Algumas das minhas habilidades são <span>HTML, CSS, JavaScript, ReactJs e NodeJs</span>.<br/><br/>
+            Tenho me dedicado ao estudo de desenvolvimento web por aproximadamente um ano, com foco na criação de interfaces front-end criativas e na construção de soluções back-end. Algumas das minhas habilidades são <span className='mark'>HTML, CSS, JavaScript, ReactJs e NodeJs</span>.<br/><br/>
 
             Estou comprometido com o aprendizado contínuo, sempre em busca de novos conhecimentos para aprimorar minhas habilidades. A curto prazo pretendo iniciar uma pós-graduação em Engenharia de Software.<br/><br/>
 
@@ -55,7 +55,7 @@ export function BoxAbout({ ...rest }) {
 
           <h2>Jornada e Aprendizados</h2>
           <p>
-            Atuei como <span className='spanBold'>Técnico de Sistemas</span> e, posteriormente, como <span>Analista de Tecnologia</span> no departamento de tecnologia da Plataforma de Produção da <span className='spanBold'>TV Globo</span>. Lá, eu era responsável pelo planejamento, preparação e disponibilização dos recursos necessários para a gravação e transmissão de programas ao vivo.<br/><br/>
+            Atuei como <span className='spanBold'>Técnico de Sistemas</span> e, posteriormente, como <span className='spanBold'>Analista de Tecnologia</span> no departamento de tecnologia da Plataforma de Produção da <span className='spanBold'>TV Globo</span>. Lá, eu era responsável pelo planejamento, preparação e disponibilização dos recursos necessários para a gravação e transmissão de programas ao vivo.<br/><br/>
 
             Foi durante um projeto especial para as Eleições, onde tive a oportunidade de ver de perto a participação da equipe de desenvolvimento, que minha paixão pela programação realmente se acendeu. Fiquei fascinado pela dinâmica e pelo impacto da aplicação que desenvolveram para coletar dados das urnas recebidas através do TSE, em tempo real. A elaboração do design e as funcionalidades criadas para a interação do apresentador com a aplicação rodando no telão do estúdio foram incríveis e despertaram em mim uma grande vontade de conhecer como tudo isso funciona e, um dia, também poder trabalhar com isso.<br/><br/>
 

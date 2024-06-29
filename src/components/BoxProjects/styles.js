@@ -9,7 +9,13 @@ export const Container = styled.div`
     align-items: center;
 
     h1 {
-      margin-right: 2rem;
+      margin-right: 1rem;
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    h1 {
+      font-size: 2.4rem;
     }
   }
 

@@ -18,25 +18,26 @@ export function Home() {
 
   return (
     <Container>
+      <div className="line"></div>
       
         <SideBar 
           menuIsOpen={menuIsOpen} 
           onCloseMenu={() => setMenuIsOpen(false)}
         />
 
-      <Content>
-        <Header onOpenMenu={() => setMenuIsOpen(true)} />        
-        <div className="box-main">
-          <AnimatePresence mode="wait">
-            <Routes>
-              <Route path="/about" element={<BoxAbout />} />
-              <Route path="/projects" element={<BoxProjects />} />
-              <Route path="/stack" element={<BoxStack />} />
-              <Route path="/" element={<BoxAbout />} />
-            </Routes>
-          </AnimatePresence>
-        </div>
-      </Content>
+        <Content>
+          <Header onOpenMenu={() => setMenuIsOpen(true)} />        
+          <div className="box-main">
+            <AnimatePresence mode="wait">
+              <Routes>
+                <Route path="/about" element={<BoxAbout />} />
+                <Route path="/projects" element={<BoxProjects />} />
+                <Route path="/stack" element={<BoxStack />} />
+                <Route path="/" element={<BoxAbout />} />
+              </Routes>
+            </AnimatePresence>
+          </div>
+        </Content>
 
     </Container>
   )

@@ -3,14 +3,32 @@ import { DEVICE_BREAKPOINTS } from "../../styles/deviceBreakpoints";
 
 export const Container = styled.aside`
   width: 40rem;
-  height: 100vh;
 
-  border-right: var(--border-color);
-  font-size: 1.5rem;
-  padding: 3rem 1.5rem 0 1.5rem;
+  .line {
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    border-radius: 1px;
+    background: linear-gradient(145deg, #5dcfc9, #3d73a3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 
-  display: flex;
-  flex-direction: column;
+  .sub-container {
+    width: 100%;
+    height: 100vh;
+    border-right: var(--border-color);
+    font-size: 1.5rem;
+    padding: 2rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     position: absolute;
@@ -30,10 +48,25 @@ export const Container = styled.aside`
   }
 `
 
+export const ButtonToggleMode = styled.button`
+  width: 3.6rem;
+  height: 3.6rem;
+  cursor: pointer;
+  
+  background: none;  
+  border: none;
+  /* border: 1px solid rgb(75 85 99); */
+  /* border-radius: .4rem; */  
+  svg {  
+    color: var(--text-color1);
+    font-size: 2.0rem;
+  }
+`
+
 export const ButtonClose = styled.button`
   background-color: transparent;
   border: none;
-  align-self: flex-end;
+  /* align-self: flex-end; */
 
   > svg {
     font-size: 20px;
@@ -63,21 +96,22 @@ export const Nav = styled.nav`
       transition: background-color 0.2s ease;
       margin-bottom: .2rem;
       .icon-color {
-        color: ${({ theme }) => theme.COLORS.SEA_100};
+        color: var(--icon-menu-color);
       }
     }
 
+    
     .link:hover, a:hover {
-      background-color: ${({ theme }) => theme.COLORS.SEA_400};
+      background: var(--link-hover-active-focus);
       border-radius: .6rem;
     }
 
     .link.active, .link:focus {
-      background-color: ${({ theme }) => theme.COLORS.SEA_400};
+      background: var(--link-hover-active-focus);
       border-radius: .6rem;
     }
     .arrow {
-      color: ${({ theme }) => theme.COLORS.SEA_100};
+      color: var(--icon-arrow-color);
       display: flex;
       gap: 20rem;
       margin-left: auto;
@@ -93,13 +127,3 @@ export const TitleSection = styled.h5`
   }
 `;
 
-export const ButtonToggleMode = styled.button`
-  width: 3rem;
-  font-size: 2.5rem;
-  background: none;
-  color: var(--text-color1);  
-  margin-top: auto;
-  margin-bottom: 6rem;
-  cursor: pointer;
-  border: none;
-`

@@ -22,6 +22,10 @@ export default createGlobalStyle`
     --text-close-icon: ${({ theme }) => theme.COLORS.LIGHT_200};
     --text-close-icon-hover: ${({ theme }) => theme.COLORS.LIGHT_500};
     --button-menu-color: ${({ theme }) => theme.COLORS.DARK_100};
+    --icon-menu-color: ${({ theme }) => theme.COLORS.DARK_100};
+    --link-hover-active-focus: ${({ theme }) => theme.COLORS.GRAY_400};
+    --text-mark-color: ${({ theme }) => theme.COLORS.SEA_500};
+    --icon-arrow-color: ${({ theme }) => theme.COLORS.DARK_100};
   }
 
   [data-theme='dark'] {
@@ -39,6 +43,10 @@ export default createGlobalStyle`
     --text-close-icon: ${({ theme }) => theme.COLORS.LIGHT_200};
     --text-close-icon-hover: ${({ theme }) => theme.COLORS.LIGHT_500};
     --button-menu-color: ${({ theme }) => theme.COLORS.GRAY_200};
+    --icon-menu-color: ${({ theme }) => theme.COLORS.SEA_100};
+    --link-hover-active-focus: ${({ theme }) => theme.COLORS.SEA_400};
+    --text-mark-color: ${({ theme }) => theme.COLORS.SEA_100};
+    --icon-arrow-color: ${({ theme }) => theme.COLORS.SEA_100};
   }  
 
   body {

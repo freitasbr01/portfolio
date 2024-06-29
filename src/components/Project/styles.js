@@ -91,6 +91,22 @@ export const Container = styled.div`
       align-items: center;
     }
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    .description {
+      h2 {
+        font-size: 1.9rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1.4rem;
+      }
+    }
+  }
 `
 
 export const BoxCloseImg = styled.div`

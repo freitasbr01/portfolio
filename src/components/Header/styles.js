@@ -29,14 +29,6 @@ export const Container = styled.div`
 export const Profile = styled.div`
   width: 100%;
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    .tag {
-      p {
-        display: none;
-      }
-    }
-  }
-
   h2 {
     font-size: 2rem;
   }
@@ -61,6 +53,24 @@ export const Profile = styled.div`
     font-family: "Montserrat", sans-serif;
     font-size: 1.2rem;    
   }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    .tag {
+      p {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .dev {
+    font-size: 1.36rem; 
+  }
+  }
 `
 
 export const ButtonMenu = styled.button`
@@ -75,7 +85,7 @@ export const ButtonMenu = styled.button`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     display: flex;
-    align-self: flex-start;
-    margin-right: 1rem
+    align-self: center;
+    margin-right: .5rem;
   }
 `

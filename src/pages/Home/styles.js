@@ -5,6 +5,15 @@ export const Container = styled.div`
   width: 100%;
   height: 100vh;
   display: flex;
+
+  .line {
+    position: absolute;
+    width: 100%;
+    height: .1rem;
+    border-radius: 1px;
+    background: linear-gradient(145deg, #5dcfc9, #3d73a3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
 `
 
 export const Content = styled.div`

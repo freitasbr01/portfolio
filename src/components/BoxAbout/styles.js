@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
+import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`
   color: var(--text-color2);
@@ -14,14 +14,31 @@ export const Container = styled.div`
   p {    
     font-size: 1.5rem;
     text-align: justify;
+    hyphens: auto;
 
     .spanBold {
       color: var(--text-color2);
       font-weight: bold;
     }
 
-    span {
-      color: ${({ theme }) => theme.COLORS.SEA_100};
+    .mark {
+      color: var(--text-mark-color);
+      font-style: italic;
+    }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+
+    h1 {
+      font-size: 2.1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {    
+      font-size: 1.4rem;
     }
   }
 

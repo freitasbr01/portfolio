@@ -38,6 +38,7 @@ export default {
     SEA_200: "#11baa7",
     SEA_300: "#5dcfc9b8",
     SEA_400: "#5dcfc926",
+    SEA_500: "#17b9d9",
 
     GRADIENT_100: "linear-gradient(180deg, #161B22 0%, #1E242B 100%)",
     GRADIENT_200: "linear-gradient(180deg, #0D1117 0%, #161B22 100%)",
