@@ -15,8 +15,6 @@ import { IoClose } from "react-icons/io5";
 import { LuDownload } from "react-icons/lu";
 
 
-
-
 export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
   const location = useLocation();
   const [theme, toggleTheme] = useTheme();
