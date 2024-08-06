@@ -2,14 +2,12 @@ import { Container, Content } from './styles';
 
 import { SideBar } from '../../components/SideBar';
 import { Header } from '../../components/Header';
-
 import { BoxAbout } from '../../components/BoxAbout';
 import { BoxProjects } from '../../components/BoxProjects';
 import { BoxStack } from '../../components/BoxStack';
 
 import {Routes, Route } from 'react-router-dom';
 import { AnimatePresence} from 'framer-motion';
-
 import { useState } from "react";
 
 

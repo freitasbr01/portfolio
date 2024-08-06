@@ -22,8 +22,8 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
   return (
     <Container data-menu-is-open={menuIsOpen}>
       <div className="line"></div>
-
       <div className="sub-container">
+
         <div className="button-top">
           <ButtonToggleMode onClick={toggleTheme}>
             <div>
