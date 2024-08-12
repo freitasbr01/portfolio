@@ -106,9 +106,9 @@ export function BoxStack({ ...rest }) {
             <Tech title="VScode" icon={VscodeIcon} />
             <Tech title="Beekeeper" icon={BeekeeperIcon} />
             <Tech title="Insomnia" icon={InsomniaIcon} />
-            <Tech title="Discord" icon={DiscordIcon} />
-            <Tech title="Teams" icon={TeamsIcon} />
-            <Tech title="Notion" icon={NotionIcon} />
+            {/* <Tech title="Discord" icon={DiscordIcon} /> */}
+            {/* <Tech title="Teams" icon={TeamsIcon} /> */}
+            {/* <Tech title="Notion" icon={NotionIcon} /> */}
           </BoxTech>
         </ScrollBar>
 

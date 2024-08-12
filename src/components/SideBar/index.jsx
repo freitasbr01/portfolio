@@ -103,13 +103,13 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
               </a>
             </li>
 
-            <li>
+            {/* <li>
               <a href="https://instagram.com/freitasbr01" target="_blank">
                 <FaInstagram />
                 <span>Instagram</span>
                 <FiArrowUpRight className='arrow'/>
               </a>
-            </li>
+            </li> */}
 
             <li>
               <a href="https://raw.githubusercontent.com/freitasbr01/portfolio/main/src/assets/file/Alan_Pereira_de_Freitas.pdf" target="_blank">

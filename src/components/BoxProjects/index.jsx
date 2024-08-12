@@ -11,6 +11,7 @@ import imgFocusTimer from '../../assets/contador.png';
 import imgFormularioMentoria from '../../assets/formulario-avalie.png';
 import imgGithubFavorites from '../../assets/github.png';
 import imgMarket from '../../assets/market.png';
+import imgFoodExplorer from '../../assets/imgFoodExplorer.png';
 
 import { Title } from '../../components/Title';
 import { ScrollBar } from '../../components/ScrollBar';
@@ -60,6 +61,15 @@ export function BoxProjects({ ...rest}) {
         <Title title="Projetos" />
 
         <ScrollBar>
+
+          <Project 
+            title={{h2: "Food Explorer", h3: "Tecnologias utilizadas"}} 
+            description="É uma aplicação web para um restaurante virtual, permitindo que administradores gerenciem o menu e que clientes explorem e façam pedidos de pratos de forma intuitiva."
+            links={{repo: "https://github.com/freitasbr01/food-explorer-frontend", deploy: "https://github.com/freitasbr01/food-explorer-frontend"}}
+            photo={imgFoodExplorer}
+            icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
+          />
+
           <Project 
             title={{h2: "Portfólio", h3: "Tecnologias utilizadas"}} 
             description="No meu portfólio como desenvolvedor, apliquei algumas funcionalidades como dark/light mode, design responsivo para dispositivos, transições e animações."
