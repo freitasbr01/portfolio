@@ -13,7 +13,7 @@ export function Header({ onOpenMenu, ...rest }) {
       <img src={perfil} loading="lazy" alt="Foto de perfil" />
       
       <Profile>
-        <h2>Alan Freitas</h2>
+        <h2><span>Alan Freitas</span></h2>
         <p className='dev'>Desenvolvedor Full-Stack</p>
         <div className="tag">
           <p>JavaScript</p>

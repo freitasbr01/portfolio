@@ -9,10 +9,12 @@ export const Container = styled.div`
   .line {
     position: absolute;
     width: 100%;
-    height: .1rem;
+    height: .6rem;
     border-radius: 1px;
-    background: linear-gradient(145deg, #5dcfc9, #3d73a3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, rgb(230, 213, 28), rgb(255, 165, 0), rgb(230, 98, 55));
+    /* background: linear-gradient(145deg, #5dcfc9, #3d73a3); */
   }
 `
 

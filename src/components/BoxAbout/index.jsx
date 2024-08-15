@@ -1,12 +1,19 @@
-import { Container } from './styles';
-
+import { Container, Title, Button } from './styles';
 import { ScrollBar } from '../../components/ScrollBar';
-
-import { DownloadButton } from '../DownloadButton/index';
-import { Title } from '../Title/index';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+
+import { IoLogoLinkedin } from "react-icons/io";
+import { IoLogoGithub } from "react-icons/io";
+
+import { IoArrowDownOutline } from "react-icons/io5";
+import { IoArrowUpOutline } from "react-icons/io5";
+
+
 
 export function BoxAbout({ ...rest }) {
+  const [showContent, setShowContent] = useState(false);
+
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -22,7 +29,11 @@ export function BoxAbout({ ...rest }) {
   const pageTransition = {
     type: "tween",
     duration: 0.5,
-  };  
+  };
+  
+  const handleButtonClick = () => {
+    setShowContent(!showContent);
+  };
 
   return (
     <motion.div
@@ -35,40 +46,55 @@ export function BoxAbout({ ...rest }) {
 
       <Container {...rest}>
 
-        <Title title="Sobre mim" />
+        <Title>
+          <h2 className='h2'>Olá!</h2>
+          <h1>Eu sou <span>Alan Freitas</span></h1>
+          <p className='description'>Um entusiasta da tecnologia e apaixonado por inovação ... </p>
+
+          <div className="links">
+            <a href="https://github.com/freitasbr01" target="_blank" className='github'>
+              <IoLogoGithub />
+              <span>@freitasbr01</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/alanfreitasbr01" target="_blank" className='linkedin'>
+              <IoLogoLinkedin />
+              <span>freitasbr01</span>
+            </a>
+
+
+            <p className='see-more'>{showContent ? 'ver menos ...' : 'ver mais ...'}</p>
+
+            <Button onClick={handleButtonClick}>
+              {showContent ? <IoArrowUpOutline /> : <IoArrowDownOutline />}
+            </Button>
+          </div>
+        </Title>    
+
+
         
-        <ScrollBar>
-          <p>
-            Olá, meu nome é Alan Freitas, moro no Rio de Janeiro!
-            Sou um desenvolvedor full-stack, atualmente estou fazendo <span className='spanBold'>Análise e Desenvolvimento de Sistemas</span> e possuo graduação em Engenharia de Produção.
-          </p>
+        {showContent && (
+          <ScrollBar>
+            <h2>Sobre mim</h2>
+            <p>
+              Estudo <span className='spanBold'>Análise e Desenvolvimento de Sistemas</span> e possuo graduação em Engenharia de Produção. <br />
+              Tenho experiência em projetos pessoais e estudos acadêmicos, envolvendo design de interfaces, gerenciamento de código e integração de sistemas. Algumas das minhas habilidades são <span className='mark'>HTML, CSS, JavaScript, ReactJs e NodeJs</span>.<br/><br/>
+              Além disso, possuo sólida experiência em infraestrutura tecnológica, fluxos de processos e gerenciamento de softwares em uma grande empresa de comunicação, participando ativamente de grandes coberturas jornalísticas e eventos esportivos.
+            </p>
 
-          <h2>Habilidades e Objetivos Futuros</h2>          
-          <p>
-            Tenho me dedicado ao estudo de desenvolvimento web por aproximadamente um ano, com foco na criação de interfaces front-end criativas e na construção de soluções back-end. Algumas das minhas habilidades são <span className='mark'>HTML, CSS, JavaScript, ReactJs e NodeJs</span>.<br/><br/>
+            <h2>Objetivos Futuros</h2>          
+            <p>
+              Atualmente tenho me dedicado no aperfeiçoamento das habilidades em React.js e Node.js, realizando projetos pessoais e com estudos acadêmicos. Estou comprometido com o aprendizado contínuo, e aberto para aprender novas tecnologias. A curto prazo vou iniciar uma pós-graduação em Engenharia de Software.<br/>
+            </p>
 
-            Estou comprometido com o aprendizado contínuo, sempre em busca de novos conhecimentos para aprimorar minhas habilidades. A curto prazo pretendo iniciar uma pós-graduação em Engenharia de Software.<br/><br/>
+            <h2>Jornada e Aprendizados</h2>
+            <p>
+              Atuei como <span className='spanBold'>Técnico de Sistemas</span> e, posteriormente, como <span className='spanBold'>Analista de Tecnologia</span> no departamento de tecnologia da <span className='spanBold'>TV Globo</span>. Eu era responsável pelo planejamento, preparação e disponibilização dos recursos necessários para a gravação e transmissão de programas ao vivo.<br/><br/>
 
-            Entendo que o comprometimento e a dedicação são pilares importantes para obter êxito em qualquer área da vida, é algo que levo sempre comigo.
-            Estou ansioso para continuar minha jornada e explorar novas oportunidades na área de desenvolvimento.
-          </p>
-
-          <h2>Jornada e Aprendizados</h2>
-          <p>
-            Atuei como <span className='spanBold'>Técnico de Sistemas</span> e, posteriormente, como <span className='spanBold'>Analista de Tecnologia</span> no departamento de tecnologia da Plataforma de Produção da <span className='spanBold'>TV Globo</span>. Lá, eu era responsável pelo planejamento, preparação e disponibilização dos recursos necessários para a gravação e transmissão de programas ao vivo.<br/><br/>
-
-            Foi durante um projeto especial para as Eleições, onde tive a oportunidade de ver de perto a participação da equipe de desenvolvimento, que minha paixão pela programação realmente se acendeu. Fiquei fascinado pela dinâmica e pelo impacto da aplicação que desenvolveram para coletar dados das urnas recebidas através do TSE, em tempo real. A elaboração do design e as funcionalidades criadas para a interação do apresentador com a aplicação rodando no telão do estúdio foram incríveis e despertaram em mim uma grande vontade de conhecer como tudo isso funciona e, um dia, também poder trabalhar com isso.<br/><br/>
-
-            Tenho certeza de que as habilidades que desenvolvi em minha carreira anterior, como comunicação, resolução de problemas e conflitos, e trabalho sob pressão, serão valiosas em minha nova função como desenvolvedor.
-          </p>          
-
-          <h2>Vamos Conversar</h2>
-          <p>
-            Se meu trabalho despertou seu interesse e você deseja discutir colaborações, projetos ou oportunidades na área de desenvolvimento, estou à disposição para batermos um papo.
-          </p>
-
-          <DownloadButton />
-        </ScrollBar>
+              Foi durante um projeto para as Eleições de 2022, onde tive a oportunidade de ver a participação da equipe de desenvolvimento, que minha paixão pela programação realmente se acendeu. Fiquei fascinado pela dinâmica e pelo impacto da aplicação que desenvolveram para coletar dados das urnas recebidas através do TSE, em tempo real. A elaboração do design e as funcionalidades criadas para a interação do apresentador com a aplicação rodando no telão do estúdio foram incríveis e despertaram em mim uma grande vontade de conhecer como tudo isso funciona e, um dia, também poder trabalhar com isso.<br/><br/>
+            </p>          
+          </ScrollBar>
+        )}
 
       </Container>
 

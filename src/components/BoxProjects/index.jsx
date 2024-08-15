@@ -28,9 +28,10 @@ import GithubIcon from '../Icons/GithubIcon';
 import NodeIcon from '../Icons/NodeIcon';
 import SqliteIcon from '../Icons/SqliteIcon';
 
+
 import { motion } from 'framer-motion';
 
-export function BoxProjects({ ...rest}) {
+export function BoxProjects({setMenuIsOpen, ...rest}) {
   const pageVariants = {
     initial: {
       opacity: 0,

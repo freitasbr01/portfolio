@@ -40,9 +40,7 @@ export const Container = styled.div`
     p {    
       font-size: 1.4rem;
     }
-  }
-
-  
+  }  
 
   ::-webkit-scrollbar {
     width: 8px;
@@ -59,3 +57,108 @@ export const Container = styled.div`
     background-color: var(--bg-color-scroll-hover);
   }
 `
+
+export const Title = styled.div`
+  color: var(--text-color2);
+  font-family: "Poppins", sans-serif;
+  max-width: 90rem;
+  overflow: hidden;
+  padding: 1rem;
+
+  .h2 {
+    color: var(--text-color1);
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-top: 1rem;
+  }
+
+  h1 {
+    color: var(--text-color1);
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: -1.5rem;
+    white-space: nowrap;
+
+    span {
+      background: linear-gradient(to right, rgb(255, 165, 0), rgb(230, 98, 55));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .description {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  .links {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+
+    .linkedin, .github {
+      color: var(--text-color2);
+      display: flex;
+      align-items: center;
+      gap: .2rem;
+
+      svg {
+        font-size: 1.8rem;
+        font-family: 400;
+      }
+
+      span {
+        font-size: 1.4rem;
+        font-style: italic;
+        &:hover {
+          color: var(--text-color1);
+        }
+      }
+    }
+
+    .see-more {
+      font-size: 1.4rem;
+      font-weight: 500;
+      font-style: italic;
+    }
+  }
+`
+
+export const Button = styled.button`
+  color: var(--text-color2);
+  background: none;
+  border: none;
+  margin: -0.2rem 0rem 0rem -1rem;
+
+  transform: translateX(-50%);
+  cursor: pointer;
+  border-radius: 0.375rem;
+  transition: color 0.3s ease;
+
+  &:hover, &:focus-visible {
+    color: ${({ theme }) => theme.COLORS.PRIMARY_300};
+  }
+
+  svg {
+    height: 2rem;
+    width: 2rem;
+    animation: bounce 1s cubic-bezier(.1, 0, 0.58, 1) infinite;
+    margin-top: -.5rem;
+    margin-left: .5rem;
+
+
+
+    @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+
+    100% {
+      transform: translateY(0); 
+    }
+  }
+ }
+`;

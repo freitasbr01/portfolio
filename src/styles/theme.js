@@ -46,6 +46,14 @@ export default {
     OPACITY_100: "rgba(204, 204, 204, 0.15)",
     OPACITY_200: "rgba(204, 204, 204, 0.40)",
 
+    PRIMARY_100: "#e5e7401c",
+    PRIMARY_200: "rgb(230 213 28)",
+    PRIMARY_300: "rgb(255, 165, 0)",
+    PRIMARY_400: "rgb(230 98 55)",
+    PRIMARY_500: "rgb(179 22 2)",
+
+
+
 
   }
 }

@@ -28,13 +28,22 @@ export const Container = styled.div`
 
 export const Profile = styled.div`
   width: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="110"><path d="M0,50 C150,150 350,0 500,50 L500,00 L0,0 Z" fill="rgba(255, 255, 255, 0.1)" /></svg>') repeat-x;
+  background-size: cover;
+  border-radius: 3px;
 
-  h2 {
-    font-size: 2rem;
+  font-family: Poppins, sans-serif;
+
+  h2 { font-size: 2rem; }
+
+  span {
+    background: linear-gradient(to right, rgb(255, 165, 0), rgb(230, 98, 55));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .dev {
-    color: ${({ theme }) => theme.COLORS.GRAY_300};
+    color: var(--text-color1);
     font-size: 1.4rem; 
     margin: .1rem 0rem .8rem 0rem;
   }

@@ -24,13 +24,15 @@ export function Home() {
         />
 
         <Content>
-          <Header onOpenMenu={() => setMenuIsOpen(true)} />        
+          <Header onOpenMenu={() => setMenuIsOpen(true)} />
+
           <div className="box-main">
             <AnimatePresence mode="wait">
               <Routes>
                 <Route path="/about" element={<BoxAbout />} />
                 <Route path="/projects" element={<BoxProjects />} />
                 <Route path="/stack" element={<BoxStack />} />
+
                 <Route path="/" element={<BoxProjects />} />
               </Routes>
             </AnimatePresence>
