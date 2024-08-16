@@ -77,7 +77,6 @@ export const Title = styled.div`
     font-size: 4rem;
     font-weight: 600;
     margin-top: -1.5rem;
-    white-space: nowrap;
 
     span {
       background: linear-gradient(to right, rgb(255, 165, 0), rgb(230, 98, 55));
@@ -93,8 +92,10 @@ export const Title = styled.div`
 
   .links {
     display: flex;
+    align-items: center;
     gap: 3rem;
     margin-bottom: 1rem;
+    flex-wrap: wrap;
 
     .linkedin, .github {
       color: var(--text-color2);
@@ -121,6 +122,16 @@ export const Title = styled.div`
       font-weight: 500;
       font-style: italic;
     }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    .h2 { font-size: 2rem;}
+    h1 { font-size: 3rem; }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+    .h2 { font-size: 1.8rem; }
+    h1 { font-size: 2.5rem; }
   }
 `
 
