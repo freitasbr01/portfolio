@@ -23,9 +23,11 @@ import FigmaIcon from '../Icons/FigmaIcon';
 import VscodeIcon from '../Icons/VscodeIcon';
 import BeekeeperIcon from '../Icons/BeekeeperIcon';
 import InsomniaIcon from '../Icons/InsomniaIcon';
-import DiscordIcon from '../Icons/DiscordIcon';
-import TeamsIcon from '../Icons/TeamsIcon';
-import NotionIcon from '../Icons/NotionIcon';
+import TypescriptIcon from '../Icons/TypescriptIcon';
+
+// import DiscordIcon from '../Icons/DiscordIcon';
+// import TeamsIcon from '../Icons/TeamsIcon';
+// import NotionIcon from '../Icons/NotionIcon';
 
 import { motion } from 'framer-motion';
 
@@ -65,6 +67,7 @@ export function BoxStack({ ...rest }) {
             <Tech title="HTML" icon={HtmlIcon} />
             <Tech title="CSS" icon={CssIcon} />
             <Tech title="JavaScript" icon={JavaScriptIcon} />
+            <Tech title="TypeScript" icon={TypescriptIcon} />        
             <Tech title="ReactJS" icon={ReactIcon} />
             <Tech title="Vite" icon={ViteIcon} />
             <Tech title="Styled Components" icon={StyledIcon} />
@@ -73,6 +76,7 @@ export function BoxStack({ ...rest }) {
           <h2>Back-end</h2>
           <BoxTech>
             <Tech title="JavaScript" icon={JavaScriptIcon} />
+            <Tech title="TypeScript" icon={TypescriptIcon} />
             <Tech title="NodeJS" icon={NodeIcon} />
             <Tech title="Express" icon={ExpressIcon} />
             <Tech title="Knex" icon={KnexIcon} />        

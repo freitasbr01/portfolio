@@ -27,21 +27,6 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-
-    h1 {
-      font-size: 2.1rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {    
-      font-size: 1.4rem;
-    }
-  }  
-
   ::-webkit-scrollbar {
     width: 8px;
   }
@@ -55,6 +40,21 @@ export const Container = styled.div`
   }
   ::-webkit-scrollbar-thumb:hover {
     background-color: var(--bg-color-scroll-hover);
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+
+    h1 {
+      font-size: 2.1rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {    
+      font-size: 1.4rem;
+    }
   }
 `
 
@@ -116,12 +116,6 @@ export const Title = styled.div`
         }
       }
     }
-
-    .see-more {
-      font-size: 1.4rem;
-      font-weight: 500;
-      font-style: italic;
-    }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
@@ -136,28 +130,37 @@ export const Title = styled.div`
 `
 
 export const Button = styled.button`
-  color: var(--text-color2);
+  /* color: var(--text-color2); */
+  color: ${({ theme }) => theme.COLORS.PRIMARY_300};
   background: none;
   border: none;
-  margin: -0.2rem 0rem 0rem -1rem;
+  margin: -0.2rem 0rem 0rem 4rem;
 
   transform: translateX(-50%);
   cursor: pointer;
   border-radius: 0.375rem;
   transition: color 0.3s ease;
 
-  &:hover, &:focus-visible {
+  /* display: flex;
+  align-items: center;
+  padding-left: 1.2rem; */
+
+  /* &:hover, &:focus-visible {
     color: ${({ theme }) => theme.COLORS.PRIMARY_300};
+  } */
+
+  .see-more {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: italic;
   }
 
   svg {
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     animation: bounce 1s cubic-bezier(.1, 0, 0.58, 1) infinite;
     margin-top: -.5rem;
     margin-left: .5rem;
-
-
 
     @keyframes bounce {
     0% {

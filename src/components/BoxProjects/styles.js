@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
-export const Container = styled.div`    
+export const Container = styled.div`
 
   @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     display: flex;

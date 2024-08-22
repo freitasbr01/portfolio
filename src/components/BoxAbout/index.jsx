@@ -63,9 +63,8 @@ export function BoxAbout({ ...rest }) {
             </a>
 
 
-            <p className='see-more'>{showContent ? 'ver menos' : 'ver mais'}</p>
-
             <Button onClick={handleButtonClick}>
+              {/* <p className='see-more'>{showContent ? 'ver menos' : 'ver mais'}</p> */}
               {showContent ? <IoArrowUpOutline /> : <IoArrowDownOutline />}
             </Button>
           </div>

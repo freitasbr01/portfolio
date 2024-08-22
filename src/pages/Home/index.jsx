@@ -33,7 +33,7 @@ export function Home() {
                 <Route path="/projects" element={<BoxProjects />} />
                 <Route path="/stack" element={<BoxStack />} />
 
-                <Route path="/" element={<BoxProjects />} />
+                <Route path="/" element={<BoxAbout />} />
               </Routes>
             </AnimatePresence>
           </div>
