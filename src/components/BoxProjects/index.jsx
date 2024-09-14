@@ -16,7 +16,6 @@ import imgFoodExplorer from '../../assets/imgFoodExplorer.png';
 import { Title } from '../../components/Title';
 import { ScrollBar } from '../../components/ScrollBar';
 
-
 import HtmlIcon from '../Icons/HtmlIcon';
 import CssIcon from '../Icons/CssIcon';
 import JavaScriptIcon from '../Icons/JavaScriptIcon';
@@ -28,8 +27,8 @@ import GithubIcon from '../Icons/GithubIcon';
 import NodeIcon from '../Icons/NodeIcon';
 import SqliteIcon from '../Icons/SqliteIcon';
 
-
 import { motion } from 'framer-motion';
+
 
 export function BoxProjects({setMenuIsOpen, ...rest}) {
   const pageVariants = {

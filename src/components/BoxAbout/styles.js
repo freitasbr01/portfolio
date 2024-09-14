@@ -4,6 +4,8 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 export const Container = styled.div`
   color: var(--text-color2);
   font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: visible;
 
   h2 {
     font-size: 1.7rem;
@@ -11,19 +13,16 @@ export const Container = styled.div`
     margin: 3rem 0 1rem;
   }
 
-  p {    
+  p {
+    max-width: 100rem;
     font-size: 1.5rem;
     text-align: justify;
     hyphens: auto;
 
-    .spanBold {
-      color: var(--text-color2);
-      font-weight: bold;
-    }
-
     .mark {
       color: var(--text-mark-color);
       font-style: italic;
+      font-weight: normal;
     }
   }
 
@@ -130,7 +129,6 @@ export const Title = styled.div`
 `
 
 export const Button = styled.button`
-  /* color: var(--text-color2); */
   color: ${({ theme }) => theme.COLORS.PRIMARY_300};
   background: none;
   border: none;
@@ -140,14 +138,6 @@ export const Button = styled.button`
   cursor: pointer;
   border-radius: 0.375rem;
   transition: color 0.3s ease;
-
-  /* display: flex;
-  align-items: center;
-  padding-left: 1.2rem; */
-
-  /* &:hover, &:focus-visible {
-    color: ${({ theme }) => theme.COLORS.PRIMARY_300};
-  } */
 
   .see-more {
     font-size: 1.4rem;
@@ -176,3 +166,4 @@ export const Button = styled.button`
   }
  }
 `;
+

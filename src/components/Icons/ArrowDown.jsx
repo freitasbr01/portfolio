@@ -1,4 +1,3 @@
-import * as React from "react"
 
 function ArrowDown(props) {
   return (

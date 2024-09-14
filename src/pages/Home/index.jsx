@@ -1,4 +1,4 @@
-import { Container, Content } from './styles';
+import { Container, Content, PolygonWrapper } from './styles';
 
 import { SideBar } from '../../components/SideBar';
 import { Header } from '../../components/Header';
@@ -9,6 +9,8 @@ import { BoxStack } from '../../components/BoxStack';
 import {Routes, Route } from 'react-router-dom';
 import { AnimatePresence} from 'framer-motion';
 import { useState } from "react";
+
+import Polygon from '../../components/Icons/Polygon';
 
 
 export function Home() {
@@ -24,6 +26,10 @@ export function Home() {
         />
 
         <Content>
+          <PolygonWrapper>
+            <Polygon />
+          </PolygonWrapper>
+
           <Header onOpenMenu={() => setMenuIsOpen(true)} />
 
           <div className="box-main">

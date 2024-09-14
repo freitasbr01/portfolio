@@ -1,23 +1,30 @@
-import { Container, ButtonClose, Nav, TitleSection, ButtonToggleMode  } from './styles';
+import { Container, ButtonClose, Nav, TitleSection, /*Crawler*/ } from './styles';
 
 import { Link, useLocation } from "react-router-dom";
-import useTheme from '../../hook/useTheme';
+// import useTheme from '../../hook/useTheme';
 
 import { IoBookOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FiArrowUpRight } from "react-icons/fi";
 import { LuFolderDot, LuLaptop, LuGithub } from "react-icons/lu";
-import { BsFillMoonStarsFill } from "react-icons/bs";
-import { LuSun } from "react-icons/lu";
+// import { BsFillMoonStarsFill } from "react-icons/bs";
+// import { LuSun } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
 import { LuDownload } from "react-icons/lu";
+
+// import { RiJavascriptLine } from "react-icons/ri";
+// import { IoLogoNodejs } from "react-icons/io5";
+// import { RiReactjsLine } from "react-icons/ri";
+// import { IoLogoHtml5 } from "react-icons/io";
+// import { IoLogoCss3 } from "react-icons/io";
+// import { FaGitAlt } from "react-icons/fa";
+
 
 
 export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
   const location = useLocation();
-  const [theme, toggleTheme] = useTheme();
+  // const [theme, toggleTheme] = useTheme();
 
   return (
     <Container data-menu-is-open={menuIsOpen}>
@@ -25,11 +32,11 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
       <div className="sub-container">
 
         <div className="button-top">
-          <ButtonToggleMode onClick={toggleTheme}>
+          {/* <ButtonToggleMode onClick={toggleTheme}>
             <div>
               {theme === 'light' ? <BsFillMoonStarsFill /> : <LuSun />}
             </div>
-          </ButtonToggleMode>
+          </ButtonToggleMode> */}
 
           {
             menuIsOpen &&
@@ -113,6 +120,32 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
 
           </ul>
         </Nav>
+
+
+
+        {/* <Crawler>
+          <div className="crawler-icons">
+            <RiJavascriptLine />
+            <IoLogoNodejs />
+            <RiReactjsLine />
+            <IoLogoHtml5 />
+            <IoLogoCss3 />
+            <FaGitAlt />
+            <RiJavascriptLine />
+            <IoLogoNodejs />
+            <RiReactjsLine />
+            <IoLogoHtml5 />
+            <IoLogoCss3 />
+            <FaGitAlt />
+            <RiJavascriptLine />
+            <IoLogoNodejs />
+            <RiReactjsLine />
+            <IoLogoHtml5 />
+            <IoLogoCss3 />
+            <FaGitAlt />
+          </div>
+        </Crawler> */}
+
       </div>
 
     </Container>

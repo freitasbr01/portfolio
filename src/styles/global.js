@@ -10,7 +10,7 @@ export default createGlobalStyle`
   :root {
     font-size: 62.5%;
     
-    --border-color: 1px solid ${({ theme }) => theme.COLORS.GRAY_600};
+    /* --border-color: 1px solid ${({ theme }) => theme.COLORS.GRAY_600};
     --border-color2: ${({ theme }) => theme.COLORS.GRAY_200};
     --bg-color1: ${({ theme }) => theme.COLORS.GRAY_400};
     --bg-color2: ${({ theme }) => theme.COLORS.LIGHT_100};
@@ -26,7 +26,25 @@ export default createGlobalStyle`
     --icon-menu-color: ${({ theme }) => theme.COLORS.DARK_100};
     --link-hover-active-focus: ${({ theme }) => theme.COLORS.GRAY_400};
     --text-mark-color: ${({ theme }) => theme.COLORS.PRIMARY_400};
-    --icon-arrow-color: ${({ theme }) => theme.COLORS.DARK_100};
+    --icon-arrow-color: ${({ theme }) => theme.COLORS.DARK_100}; */
+
+    --border-color: 1px solid ${({ theme }) => theme.COLORS.GRAY_400};
+    --border-color2: ${({ theme }) => theme.COLORS.LIGHT_800};
+    --bg-color1: ${({ theme }) => theme.COLORS.GRADIENT_100};
+    --bg-color2: ${({ theme }) => theme.COLORS.GRADIENT_200};
+    --bg-color-tech: ${({ theme }) => theme.COLORS.DARK_1000};
+    --bg-color-tech-icon: ${({ theme }) => theme.COLORS.OPACITY_100};
+    --bg-color-scroll: ${({ theme }) => theme.COLORS.LIGHT_800};
+    --bg-color-scroll-hover: ${({ theme }) => theme.COLORS.GRAY_300};
+    --text-color1: ${({ theme }) => theme.COLORS.LIGHT_200};
+    --text-color2: ${({ theme }) => theme.COLORS.LIGHT_500};
+    --text-close-icon: ${({ theme }) => theme.COLORS.LIGHT_200};
+    --text-close-icon-hover: ${({ theme }) => theme.COLORS.LIGHT_500};
+    --button-menu-color: ${({ theme }) => theme.COLORS.GRAY_200};
+    --icon-menu-color: ${({ theme }) => theme.COLORS.PRIMARY_300};
+    --link-hover-active-focus: ${({ theme }) => theme.COLORS.PRIMARY_100};
+    --text-mark-color: ${({ theme }) => theme.COLORS.PRIMARY_300};
+    --icon-arrow-color: ${({ theme }) => theme.COLORS.PRIMARY_300};
   }
 
   [data-theme='dark'] {

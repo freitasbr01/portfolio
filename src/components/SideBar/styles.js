@@ -48,25 +48,24 @@ export const Container = styled.aside`
   }
 `
 
-export const ButtonToggleMode = styled.button`
-  width: 3.6rem;
-  height: 3.6rem;
-  cursor: pointer;
+// export const ButtonToggleMode = styled.button`
+//   width: 3.6rem;
+//   height: 3.6rem;
+//   cursor: pointer;
   
-  background: none;  
-  border: none;
-  /* border: 1px solid rgb(75 85 99); */
-  /* border-radius: .4rem; */  
-  svg {  
-    color: var(--text-color1);
-    font-size: 2.0rem;
-  }
-`
+//   background: none;  
+//   border: none;
+//   /* border: 1px solid rgb(75 85 99); */
+//   /* border-radius: .4rem; */  
+//   svg {  
+//     color: var(--text-color1);
+//     font-size: 2.0rem;
+//   }
+// `
 
 export const ButtonClose = styled.button`
   background-color: transparent;
   border: none;
-  /* align-self: flex-end; */
 
   > svg {
     font-size: 20px;
@@ -127,3 +126,36 @@ export const TitleSection = styled.h5`
   }
 `;
 
+// export const Crawler = styled.div`
+//   width: 300px;
+//   overflow: hidden;
+//   white-space: nowrap;
+//   position: relative;
+//   margin-top: auto;
+//   margin-inline: auto;
+//   padding-bottom: 2rem;
+
+//   .crawler-icons {
+//     display: inline-block;
+//     white-space: nowrap;
+//     animation: crawler 15s linear infinite;
+//   }
+
+//   @keyframes crawler {
+//     0% {
+//       transform: translateX(0);
+//     }
+//     100% {
+//       transform: translateX(-50%);
+//     }
+//   }
+
+//   .crawler-icons > * {
+//     display: inline-block;
+//     margin-right: 2rem;
+//     font-size: 4rem;
+//     color: var(--icon-color);
+//   }
+
+
+// `

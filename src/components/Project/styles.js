@@ -54,19 +54,17 @@ export const Container = styled.div`
     }
 
     .access {
-        /* color: ${({ theme }) => theme.COLORS.SEA_200}; */
         color: rgba(255, 166, 0, 0.53);
         display: flex;
         gap: 2rem;
     }
 
     .access a {
-      /* color: ${({ theme }) => theme.COLORS.SEA_200}; */
       color: rgba(255, 166, 0, 0.53);
-      font-weight: 400;
+      font-weight: 700;
       margin-left: .5rem;
       font-family: "JetBrains Mono", monospace;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
 
     .repo, .deploy {
