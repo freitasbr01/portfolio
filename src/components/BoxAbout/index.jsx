@@ -72,7 +72,7 @@ export function BoxAbout({ ...rest }) {
 
           
           {showContent && (
-            <ScrollBar>
+            <ScrollBar className="scrollbar">
               <h2>Sobre mim</h2>
               <p>
                 Sou Desenvolvedor Web, estudante de <span className='mark'>Análise e Desenvolvimento de Sistemas</span>, com Graduação em Engenharia de Produção. Adquiri experiência em projetos pessoais e acadêmicos, envolvendo design de interfaces, gerenciamento de código e integração de sistemas. <br/><br/>

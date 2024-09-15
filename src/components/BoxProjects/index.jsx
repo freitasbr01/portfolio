@@ -60,7 +60,7 @@ export function BoxProjects({setMenuIsOpen, ...rest}) {
       <Container>
         <Title title="Projetos" />
 
-        <ScrollBar>
+        <ScrollBar className="scrollbar">
 
           <Project 
             title={{h2: "Food Explorer", h3: "Tecnologias utilizadas"}} 

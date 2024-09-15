@@ -12,6 +12,10 @@ export const Container = styled.div`
     margin-bottom: 2rem;
   }
 
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    .scrollbar { max-height: 65rem; }
+  }
+
 
   ::-webkit-scrollbar {
     width: 8px;

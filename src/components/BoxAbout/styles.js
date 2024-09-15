@@ -6,11 +6,11 @@ export const Container = styled.div`
   font-family: "Poppins", sans-serif;
   position: relative;
   overflow: visible;
-
+  
   h2 {
     font-size: 1.7rem;
     color: var(--text-color1);
-    margin: 3rem 0 1rem;
+    margin: 0rem 0 1rem;
   }
 
   p {
@@ -24,6 +24,11 @@ export const Container = styled.div`
       font-style: italic;
       font-weight: normal;
     }
+  }
+
+  .scrollbar {
+    margin-top: 2rem;
+    max-height: 40rem;
   }
 
   ::-webkit-scrollbar {
@@ -42,18 +47,9 @@ export const Container = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
-
-    h1 {
-      font-size: 2.1rem;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {    
-      font-size: 1.4rem;
-    }
+    h1 { font-size: 2.1rem; }
+    h2 { font-size: 1.5rem; }
+    p { font-size: 1.4rem; }
   }
 `
 

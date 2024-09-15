@@ -3,6 +3,10 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`
 
+  @media (max-width: ${DEVICE_BREAKPOINTS.XXL}) {
+    .scrollbar { max-height: 60rem; }
+  }
+
   @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,10 @@ export const Container = styled.div`
     h1 {
       margin-right: 1rem;
     }
+  }
+
+  @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
+    .scrollbar { max-height: 65rem; }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {

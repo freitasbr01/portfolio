@@ -61,7 +61,7 @@ export function BoxStack({ ...rest }) {
       <Container {...rest}>
         <Title title="Tech Stack" />
 
-        <ScrollBar>
+        <ScrollBar className="scrollbar">
           <h2>Front-end</h2>
           <BoxTech>
             <Tech title="HTML" icon={HtmlIcon} />
