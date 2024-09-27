@@ -28,6 +28,29 @@ export const Container = styled.aside`
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
+
+    .button-language {
+      font-family: 'Roboto', sans-serif;
+
+      color: white;
+      background: none;
+      border: none;
+
+      font-size: 1.4rem;
+      font-weight: bold;
+
+      .color-brazil {
+        background: linear-gradient(to right, #009b3a, #ffdf00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .color-eua {
+        background: linear-gradient(to right, #3c3b6e, #ffffff, #b22234);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.XL}) {

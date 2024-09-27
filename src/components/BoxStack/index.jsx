@@ -87,13 +87,13 @@ export function BoxStack({ ...rest }) {
             <Tech title="SQLite" icon={SqliteIcon} />
           </BoxTech>
 
-          <h2>Controle de versão</h2>
+          <h2>Version control</h2>
           <BoxTech>
             <Tech title="Git" icon={GitIcon} />
             <Tech title="Github" icon={GithubIcon} />
           </BoxTech>
 
-          <h2>Testes</h2>
+          <h2>Tests</h2>
           <BoxTech>
             <Tech title="Jest" icon={JestIcon} />
           </BoxTech>
@@ -103,16 +103,6 @@ export function BoxStack({ ...rest }) {
             <Tech title="Photoshop" icon={PhotoshopIcon} />
             <Tech title="Figma" icon={FigmaIcon} />
 
-          </BoxTech>
-
-          <h2>Apps</h2>
-          <BoxTech>
-            <Tech title="VScode" icon={VscodeIcon} />
-            <Tech title="Beekeeper" icon={BeekeeperIcon} />
-            <Tech title="Insomnia" icon={InsomniaIcon} />
-            {/* <Tech title="Discord" icon={DiscordIcon} /> */}
-            {/* <Tech title="Teams" icon={TeamsIcon} /> */}
-            {/* <Tech title="Notion" icon={NotionIcon} /> */}
           </BoxTech>
         </ScrollBar>
 

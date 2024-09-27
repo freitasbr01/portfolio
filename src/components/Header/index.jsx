@@ -1,8 +1,12 @@
 import { Container, Profile, ButtonMenu } from './styles';
 import perfil from '../../assets/perfil2.jpg'
 import { PiListBold } from "react-icons/pi";
+import { useTranslation } from 'react-i18next';
+
 
 export function Header({ onOpenMenu, ...rest }) {
+  const { t } = useTranslation();
+  
   return (
     <Container>
 
@@ -14,7 +18,7 @@ export function Header({ onOpenMenu, ...rest }) {
       
       <Profile>
         <h2><span>Alan Freitas</span></h2>
-        <p className='dev'>Desenvolvedor Full-Stack</p>
+        <p className='dev'>{t('header.position')}</p>
         <div className="tag">
           <p>JavaScript</p>
           <p>NodeJS</p>

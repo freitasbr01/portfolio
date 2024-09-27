@@ -1,30 +1,26 @@
 import { Container, ButtonClose, Nav, TitleSection, /*Crawler*/ } from './styles';
-
 import { Link, useLocation } from "react-router-dom";
-// import useTheme from '../../hook/useTheme';
+import { useTranslation } from 'react-i18next';
 
 import { IoBookOutline } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { SlSocialLinkedin } from "react-icons/sl";
 import { FiArrowUpRight } from "react-icons/fi";
 import { LuFolderDot, LuLaptop, LuGithub } from "react-icons/lu";
-// import { BsFillMoonStarsFill } from "react-icons/bs";
-// import { LuSun } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
 import { LuDownload } from "react-icons/lu";
 
-// import { RiJavascriptLine } from "react-icons/ri";
-// import { IoLogoNodejs } from "react-icons/io5";
-// import { RiReactjsLine } from "react-icons/ri";
-// import { IoLogoHtml5 } from "react-icons/io";
-// import { IoLogoCss3 } from "react-icons/io";
-// import { FaGitAlt } from "react-icons/fa";
-
-
+import { useState } from 'react';
 
 export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
   const location = useLocation();
-  // const [theme, toggleTheme] = useTheme();
+  const { t, i18n } = useTranslation();
+  const [currentLang, setCurrentLang] = useState('en'); 
+
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+    setCurrentLang(lang);
+  };
 
   return (
     <Container data-menu-is-open={menuIsOpen}>
@@ -32,11 +28,11 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
       <div className="sub-container">
 
         <div className="button-top">
-          {/* <ButtonToggleMode onClick={toggleTheme}>
-            <div>
-              {theme === 'light' ? <BsFillMoonStarsFill /> : <LuSun />}
-            </div>
-          </ButtonToggleMode> */}
+          {currentLang === 'en' ? (
+              <button className='button-language' onClick={() => changeLanguage('pt')}><span className='color-brazil'>PT</span></button>
+            ) : (
+              <button className='button-language' onClick={() => changeLanguage('en')}><span className='color-eua'>EN</span></button>
+            )}
 
           {
             menuIsOpen &&
@@ -56,7 +52,7 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
                 to="/about"
               >
                 <IoBookOutline className={location.pathname === '/about' ? 'icon-color' : ''} />
-                <span>Sobre</span>
+                <span>{t('sidebar.about')}</span>
               </Link>
             </li>
 
@@ -67,7 +63,7 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
               to="/projects"
             >
                 <LuFolderDot className={location.pathname === '/projects' ? 'icon-color' : ''}/>
-                <span>Projetos</span>
+                <span>{t('sidebar.projects')}</span>
               </Link>
             </li>
 
@@ -84,7 +80,7 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
           </ul>
 
 
-          <TitleSection>Redes</TitleSection>
+          <TitleSection>{t('sidebar.networks')}</TitleSection>
           <ul>          
             <li>
               <a href="https://github.com/freitasbr01" target="_blank">      
@@ -113,38 +109,13 @@ export function SideBar({ menuIsOpen, onCloseMenu, ...rest }) {
             <li>
               <a href="https://raw.githubusercontent.com/freitasbr01/portfolio/main/src/assets/file/Alan_Pereira_de_Freitas.pdf" target="_blank">
                 <LuDownload />
-                <span>Currículo</span>
+                <span>{t('sidebar.resume')}</span>
                 <FiArrowUpRight className='arrow'/>
               </a>
             </li>
 
           </ul>
         </Nav>
-
-
-
-        {/* <Crawler>
-          <div className="crawler-icons">
-            <RiJavascriptLine />
-            <IoLogoNodejs />
-            <RiReactjsLine />
-            <IoLogoHtml5 />
-            <IoLogoCss3 />
-            <FaGitAlt />
-            <RiJavascriptLine />
-            <IoLogoNodejs />
-            <RiReactjsLine />
-            <IoLogoHtml5 />
-            <IoLogoCss3 />
-            <FaGitAlt />
-            <RiJavascriptLine />
-            <IoLogoNodejs />
-            <RiReactjsLine />
-            <IoLogoHtml5 />
-            <IoLogoCss3 />
-            <FaGitAlt />
-          </div>
-        </Crawler> */}
 
       </div>
 

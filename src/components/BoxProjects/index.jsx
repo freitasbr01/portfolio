@@ -28,9 +28,13 @@ import NodeIcon from '../Icons/NodeIcon';
 import SqliteIcon from '../Icons/SqliteIcon';
 
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+
 
 
 export function BoxProjects({setMenuIsOpen, ...rest}) {
+  const { t } = useTranslation();
+  
   const pageVariants = {
     initial: {
       opacity: 0,
@@ -58,94 +62,92 @@ export function BoxProjects({setMenuIsOpen, ...rest}) {
     >
 
       <Container>
-        <Title title="Projetos" />
+        <Title title={t('projects.title')} />
 
         <ScrollBar className="scrollbar">
-
           <Project 
-            title={{h2: "Food Explorer", h3: "Tecnologias utilizadas"}} 
-            description="É uma aplicação web para um restaurante virtual, permitindo que administradores gerenciem o menu e que clientes explorem e façam pedidos de pratos de forma intuitiva."
+            title={{h2: "Food Explorer", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.foodExplorer.description')}
             links={{repo: "https://github.com/freitasbr01/food-explorer-frontend", deploy: "https://github.com/freitasbr01/food-explorer-frontend"}}
             photo={imgFoodExplorer}
             icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "Portfólio", h3: "Tecnologias utilizadas"}} 
-            description="No meu portfólio como desenvolvedor, apliquei algumas funcionalidades como dark/light mode, design responsivo para dispositivos, transições e animações."
+            title={{h2: "Portfólio", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.portfolio.description')}
             links={{repo: "https://github.com/freitasbr01/portfolio", deploy: "https://alanfreitas.netlify.app"}}
             photo={imgPortifolio}
             icons={[ <JavaScriptIcon />, <ReactIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "Market Products", h3: "Tecnologias utilizadas"}} 
-            description="Um projeto dedicado ao cadastro de produtos para um site de mercado virtual."
+            title={{h2: "Market Products", h3: t('projects.technologiesUsed')}}           
+            description={t('projects.marketProducts.description')}
             links={{repo: "https://github.com/freitasbr01/market-products", deploy: "https://market-products.netlify.app/"}}
             photo={imgMarket}
             icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "RocketMovies", h3: "Tecnologias utilizadas"}} 
-            description="Sistema de gerenciamento personalizado de anotações de filmes favoritos. Permite adicionar, categorizar e lançar uma avaliação."
+            title={{h2: "RocketMovies", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.rocketMovies.description')}
             links={{repo: "https://github.com/freitasbr01/rocketmovies-front", deploy: "https://rocketmovies01.netlify.app/"}}
             photo={imgRocketMovies}
             icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
-
           <Project 
-            title={{h2: "Biscoito da Sorte", h3: "Tecnologias utilizadas"}} 
-            description="Projeto de um aplicativo web interativo chamado “Biscoito da Sorte” que permite aos usuários abrir um biscoito da sorte virtual."
+            title={{h2: "Biscoito da Sorte", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.biscoitoDaSorte.description')}
             links={{repo: "https://github.com/freitasbr01/biscoito-da-sorte?tab=readme-ov-file", deploy: "https://biscoitodasorte01.netlify.app/"}}
             photo={imgBiscoito}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "FocusTimer", h3: "Tecnologias utilizadas"}} 
-            description="Uma aplicação web de contagem regressiva com a capacidade de aumentar ou diminuir o tempo em intervalos de 5 minutos."
+            title={{h2: "FocusTimer", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.focusTimer.description')}
             links={{repo: "https://github.com/freitasbr01/focustimer", deploy: "https://focustimer02.netlify.app/"}}
             photo={imgFocusTimer}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "Formulário Avalie Mentoria", h3: "Tecnologias utilizadas"}} 
-            description="Formulário de mentoria que coleta informações pessoais do usuário e do mentor escolhido de uma lista pré-definida. Permite fornecer feedback e agendar a próxima mentoria."
+            title={{h2: "Formulário Avalie Mentoria", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.mentoringForm.description')}
             links={{repo: "https://github.com/freitasbr01/formulario-avalie-mentoria", deploy: "https://formulario-avalie-mentoria.netlify.app/"}}
             photo={imgFormularioMentoria}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "Github Favorites", h3: "Tecnologias utilizadas"}} 
-            description="Uma aplicação web interativa que se integra à API do GitHub. Esta aplicação permite aos usuários favoritar outros usuários do GitHub de seu interesse."
+            title={{h2: "Github Favorites", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.githubFavorites.description')}
             links={{repo: "https://github.com/freitasbr01/github-favorites", deploy: "https://github-favorites01.netlify.app/"}}
             photo={imgGithubFavorites}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "RocketNotes", h3: "Tecnologias utilizadas"}} 
-            description="Sistema de gerenciamento de anotações de gerais. Permite que os usuários mantenham um registro organizado de suas anotações em uma variedade de tópicos."
+            title={{h2: "RocketNotes", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.rocketNotes.description')}
             links={{repo: "https://github.com/freitasbr01/rocketnotes-front", deploy: "https://rocketnotes02.netlify.app/"}}
             photo={imgRocketNotes}
             icons={[ <JavaScriptIcon />, <NodeIcon />, <ReactIcon />, <SqliteIcon />, <HtmlIcon />, <ViteIcon />, <StyledIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "NLW Expert", h3: "Tecnologias utilizadas"}} 
-            description="Projeto de um quiz sobre JavaScript para testar os conhecimentos técnicos e ter um retorno sobre a quantidade de questões acertadas."
+            title={{h2: "NLW Expert", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.nlwExpert.description')}
             links={{repo: "https://github.com/freitasbr01/nlw-experts?tab=readme-ov-file", deploy: "https://nlw-expert.netlify.app/"}}
             photo={imgNlwExpert}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}
           />
 
           <Project 
-            title={{h2: "Calculadora IMC", h3: "Tecnologias utilizadas"}} 
-            description="Projeto de um aplicativo web para calcular o IMC, basta fornecer a altura e o peso para realizar o cálculo."
+            title={{h2: "Calculadora IMC", h3: t('projects.technologiesUsed')}} 
+            description={t('projects.calculatorIMC.description')}
             links={{repo: "https://github.com/freitasbr01/CalculadoraIMC", deploy: "https://calc-imc01.netlify.app/"}}
             photo={imgCalculadora}
             icons={[ <JavaScriptIcon />, <HtmlIcon />, <CssIcon />, <GitIcon />, <GithubIcon /> ]}

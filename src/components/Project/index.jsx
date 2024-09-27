@@ -7,9 +7,11 @@ import { GrDeploy } from "react-icons/gr";
 import { useState } from 'react';
 
 import { IoMdClose } from 'react-icons/io';
+import { useTranslation } from 'react-i18next';
 
 export function Project({ title, description, links, photo, icons = [], ...rest}) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const openModal = () => setModalIsOpen(true);
   const closeModal = () => setModalIsOpen(false);
@@ -36,7 +38,7 @@ export function Project({ title, description, links, photo, icons = [], ...rest}
         <div className="access">
           <div className="repo">
             <FaGithub />
-            <a href={links.repo} target="_blank" rel="noopener noreferrer">Repositório</a>
+            <a href={links.repo} target="_blank" rel="noopener noreferrer">{t('projects.repository')}</a>
           </div>
 
           <div className="deploy">
