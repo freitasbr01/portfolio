@@ -6,7 +6,6 @@ export const Container = styled.div`
   font-family: "Poppins", sans-serif;
   position: relative;
   overflow: visible;
-  border: 1px solid blue;
   
   h2 {
     font-size: 1.7rem;
@@ -30,7 +29,7 @@ export const Container = styled.div`
 
   .scrollbar {
     margin-top: 2rem;
-    max-height: 35rem;
+    max-height: 30rem;
   }
 
   ::-webkit-scrollbar {
