@@ -3,7 +3,7 @@ import { DEVICE_BREAKPOINTS } from '../../styles/deviceBreakpoints';
 
 export const Container = styled.div`
     max-width: 130rem;
-    max-height: 50rem;
+    height: 50rem;
     padding-right: 4rem;
     overflow-y: auto;
     box-sizing: border-box;
