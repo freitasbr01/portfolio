@@ -74,6 +74,7 @@ export default createGlobalStyle`
     font-size: 1.6rem;
     color: var(--text-color1);
     background: var(--bg-color2);
+    border: 1px solid red;
   }
 
   button:hover, a:hover {

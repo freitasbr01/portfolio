@@ -5,6 +5,9 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
+  border: 1px solid red;
+  background: red;
+
 
   h2 {
     color: var(--text-color2);
