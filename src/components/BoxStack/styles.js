@@ -16,7 +16,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: ${DEVICE_BREAKPOINTS.MD}) {
-    .scrollbar { max-height: 65rem; }
+    /* .scrollbar { max-height: 65rem; } */
   }
 
 
